@@ -112,17 +112,3 @@ The tuned configuration achieves a better balance between precision and recall a
 Sude Soylemez  
 Face Detection Optimization Project – 2026
 
-
-## 📈 Performance Curves
-
-### Precision / Recall / F1 vs Confidence
-![PRF Curve](figures/precision_recall_f1_vs_conf.png)
-
-### FPPI & Miss Rate vs Confidence
-![FPPI Curve](figures/fppi_missrate_vs_conf.png)
-
-### Effect of NMS IoU on Performance
-![NMS IoU](figures/nms_iou_analysis.png)
-
-### Baseline vs Tuned Comparison
-![Baseline vs Tuned](figures/baseline_vs_tuned.png)
