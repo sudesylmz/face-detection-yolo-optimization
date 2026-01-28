@@ -87,33 +87,6 @@ The tuned configuration achieves a better balance between precision and recall a
 
 ---
 
-## Key Takeaways
-
-- Inference-time optimization can significantly improve model performance without retraining  
-- Confidence threshold tuning provides the largest gain  
-- NMS IoU should be carefully selected to avoid over-suppression  
-- The final tuned model achieves a more stable and balanced detection behavior  
-
----
-
-## Technologies Used
-
-- Python  
-- Ultralytics YOLOv8  
-- NumPy, Pandas  
-- Matplotlib  
-- FDDB Face Detection Dataset  
-
----
-
-
-## Author
-
-Sude Soylemez  
-Face Detection Optimization Project – 2026
-
----
-
 ## Results & Analysis
 
 This section presents the quantitative results of inference-time optimization
@@ -159,3 +132,30 @@ after inference-time optimization, without retraining the model.
 
 The relative improvement (%) of Precision, Recall, and F1-score demonstrates that
 the proposed optimization strategy yields consistent gains across all key metrics.
+
+---
+
+## Key Takeaways
+
+- Inference-time optimization can significantly improve model performance without retraining  
+- Confidence threshold tuning provides the largest gain  
+- NMS IoU should be carefully selected to avoid over-suppression  
+- The final tuned model achieves a more stable and balanced detection behavior  
+
+---
+
+## Technologies Used
+
+- Python  
+- Ultralytics YOLOv8  
+- NumPy, Pandas  
+- Matplotlib  
+- FDDB Face Detection Dataset  
+
+---
+
+
+## Author
+
+Sude Soylemez  
+Face Detection Optimization Project – 2026
