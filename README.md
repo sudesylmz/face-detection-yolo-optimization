@@ -113,22 +113,3 @@ Sude Soylemez
 Face Detection Optimization Project – 2026
 
 
-## Results and Analysis
-
-### Precision / Recall / F1 vs Confidence
-![PR-F1 vs Confidence](figures/conf_pr_f1.png)
-
----
-
-### FPPI & Miss Rate vs Confidence
-![FPPI & Miss Rate](figures/fppi_missrate.png)
-
----
-
-### NMS IoU Optimization
-![NMS IoU Optimization](figures/nms_iou_comparison.png)
-
----
-
-### Baseline vs Tuned Comparison
-![Baseline vs Tuned](figures/baseline_vs_tuned.png)
