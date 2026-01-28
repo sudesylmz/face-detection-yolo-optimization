@@ -112,4 +112,50 @@ The tuned configuration achieves a better balance between precision and recall a
 Sude Soylemez  
 Face Detection Optimization Project – 2026
 
+---
 
+## Results & Analysis
+
+This section presents the quantitative results of inference-time optimization
+performed on the YOLOv8 face detection model.
+
+### Confidence Threshold Optimization
+![Confidence Threshold Sweep](figures/conf_effect.png)
+
+This figure shows the trade-off between Precision, Recall, and F1-score as the
+confidence threshold is varied. The selected operating point achieves a balanced
+precision–recall trade-off.
+
+---
+
+### NMS IoU Optimization
+![NMS IoU Effect](figures/nms_iou_effect.png)
+
+The effect of the Non-Maximum Suppression (NMS) IoU threshold on detection
+performance is illustrated above. Lower IoU thresholds lead to better suppression
+of duplicate detections.
+
+---
+
+### FPPI & Miss Rate vs Confidence
+![FPPI vs Miss Rate](figures/conf_fppi_missrate.png)
+
+As the confidence threshold increases, the False Positives Per Image (FPPI)
+decreases steadily, while the miss rate increases slightly. This behavior
+motivates the chosen operating point.
+
+---
+
+### Baseline vs Optimized (FPPI & Miss Rate)
+![Baseline vs Optimized FPPI MissRate](figures/baseline_vs_optimized_fppi_missrate.png)
+
+This comparison highlights the reduction in false positives and missed detections
+after inference-time optimization, without retraining the model.
+
+---
+
+### Relative Performance Improvement
+![Relative Improvement](figures/relative_improvement_metrics.png)
+
+The relative improvement (%) of Precision, Recall, and F1-score demonstrates that
+the proposed optimization strategy yields consistent gains across all key metrics.
